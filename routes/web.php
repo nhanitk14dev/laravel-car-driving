@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ReviewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/review/{capId}', [ReviewController::class, 'getReview'])->name('car.review');
+Route::get('/view/{capId}', [ReviewController::class, 'viewReview'])->name('car.view');

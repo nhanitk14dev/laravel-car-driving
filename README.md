@@ -30,17 +30,27 @@ Jquery
     ```
     php artisan key:generate
     ```
-- Install Node packages and build CSS, JS
+- Install Node packages and compile assets (CSS, JS):
   ```
   npm install
-  npm run dev
-  npm run prod
+  npm run dev (or npm run prod for production)
   ```
-  Finally, Run command line below and open browser on [http://127.0.0.1:8000]
+  Finally, Run command line below and open browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
   ```
   php artisan server
   ```
   
+## Demo Tasks
+1. **Pull data from Car and Driving Web Service with a JSON object response**
+    [http://127.0.0.1:8000/review/91480](http://127.0.0.1:8000/review/91480)
+
+    <img src="public/images/larave-car-demo-task-1.PNG" alt="Example Image" width="400" height="300" />
+
+2. **View the Car Review Page by sending an AJAX request to the endpoint created in Task 1**:
+    [http://127.0.0.1:8000/view/91480](http://127.0.0.1:8000/view/91480)
+
+    <img src="public/images/larave-car-demo-task-2.PNG" alt="Example Image" width="400" height="300" />
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

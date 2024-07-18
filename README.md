@@ -9,9 +9,7 @@ The aim of this task is to pull car reviews from Car And Driving (https://www.ca
 ```
 Laravel: 11
 PHP >= 8.2     
-Database: Mysql
 Bootstrap: 5.3
-Jquery
 ```
 
 ## Installation

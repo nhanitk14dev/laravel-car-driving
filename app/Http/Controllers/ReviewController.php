@@ -23,4 +23,12 @@ class ReviewController extends Controller
             return response()->json(['error' => 'Unable to fetch review data', 'message' => $e->getMessage()], 500);
         }
     }
+
+    /**
+     * Example:  /view/91480
+     */
+    public function viewReview($capId)
+    {
+        return view('car.view', compact('capId'));
+    }
 }

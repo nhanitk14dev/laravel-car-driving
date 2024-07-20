@@ -10,6 +10,7 @@ The aim of this task is to pull car reviews from Car And Driving (https://www.ca
 Laravel: 11
 PHP >= 8.2     
 Bootstrap: 5.3
+Node >= 14
 ```
 
 ## Installation
@@ -28,14 +29,14 @@ Bootstrap: 5.3
     ```
     php artisan key:generate
     ```
-- Install Node packages and compile assets (CSS, JS):
+- Install Node packages and compile assets (CSS, JS) using [Laravel Mix](https://laravel-mix.com/docs)
   ```
   npm install
   npm run dev (or npm run prod for production)
   ```
   Finally, Run command line below and open browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
   ```
-  php artisan server
+  php artisan serve
   ```
   
 ## Demo Tasks
@@ -43,6 +44,9 @@ Bootstrap: 5.3
     [http://127.0.0.1:8000/review/91480](http://127.0.0.1:8000/review/91480)
 
     <img src="public/images/larave-car-demo-task-1.PNG" alt="Example Image" width="400" height="300" />
+
+    The [SoapClient](https://www.php.net/manual/en/class.soapclient.php) class provides a client for » SOAP 1.1, » SOAP 1.2 servers. It's used in WSDL or non-WSDL mode to pull data from web service [Caranddriving](https://www.caranddriving.com/ws/A041/ws.asmx?WSDL)
+
 
 2. **View the Car Review Page by sending an AJAX request to the endpoint created in Task 1**:
     [http://127.0.0.1:8000/view/91480](http://127.0.0.1:8000/view/91480)

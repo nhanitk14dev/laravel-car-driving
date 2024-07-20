@@ -23,7 +23,8 @@ function handleReviewData(data) {
 }
 
 function handleVideo(video, reviewId) {
-    const videoUrl = `http://www.caranddriving.com/cdwebsite/player.aspx?w=580&id=${video.doc_id}&cid=demo`;
+    const videoUrl = `http://www.caranddriving.com/cdwebsite/player.aspx?w=580&id=${video.doc_id}&cid=demo&responsive=true
+`;
     const videoContainer = $("#video-container");
 
     if (videoUrl) {

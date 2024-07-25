@@ -7,10 +7,11 @@ The aim of this task is to pull car reviews from Car And Driving (https://www.ca
 ## Requirement
 
 ```
-Laravel: 11
-PHP >= 8.2     
+Laravel: 7.29
+PHP: 7.2|^8.0    
 Bootstrap: 5.3
 Node >= 14
+Database: Sqlite (default) Or MySQL,...
 ```
 
 ## Installation
@@ -29,6 +30,32 @@ Node >= 14
     ```
     php artisan key:generate
     ```
+- Config Sqlite Database if need:
+    ```
+    DB_CONNECTION=sqlite
+
+    DB_DATABASE=/absolute/path/to/database/database.sqlite (Absolute Path)
+
+    DB_DATABASE=/absolute/path/to/database/database.sqlite (Windows)
+
+    DB_DATABASE=/var/www/html/example-app/database/database.sqlite (Linux/macOS)
+
+    touch database/database.sqlite (Create file DB)
+
+    chmod 644 database/database.sqlite (Directory Permissions)
+
+    php artisan migrate (Run migration)
+
+    ```
+
+- Clear Cached Config - Route - View:
+    ```
+    php artisan route:clear
+    php artisan config:clear
+    php artisan cache:clear
+    php artisan view:cache
+    ```
+
 - Install Node packages and compile assets (CSS, JS) using [Laravel Mix](https://laravel-mix.com/docs)
   ```
   npm install
